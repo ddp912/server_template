@@ -2,7 +2,7 @@ const router = require('express').Router();
 
 
 router.get('/', (req, res, next) => {
-    res.sendStatus(200);
+    res.status(200).render('index');
 });
 
 module.exports = router;

@@ -6,6 +6,9 @@ const mainRouter = require('./router/main');
 
 const app = express();
 
+app.set('view engine', 'ejs');
+app.set('views', 'views');
+
 //Main Router
 app.use(mainRouter);
 
